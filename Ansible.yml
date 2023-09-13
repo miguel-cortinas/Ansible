@@ -1,0 +1,10 @@
+- hosts: all
+  tasks:
+  - name: crear carpetas
+    file:
+      path: ~/Nombres/
+      state: directory
+  - name: crear archivos
+    file:
+      path: ~/Nombres/Eduardo_Rodriguez_Miguel_Cortinas.txt
+      state: touch
